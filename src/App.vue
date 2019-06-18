@@ -16,8 +16,6 @@
       </mdb-navbar-toggler>
     </mdb-navbar>
 
-
-
     <!-- アイコンver -->
     <!-- <mdb-navbar  color="aqua-gradient" class="lighten-3 py-4 mb-4">
       <mdb-navbar-nav nav>
@@ -74,12 +72,12 @@
     </mdb-navbar> -->
 
 
-    <main :style="{marginTop: '10px'}">
+    <main :style="{marginTop: '60px'}">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
     </main>
-    <mdb-footer color="stylish-color">
+    <mdb-footer color="purple-gradient">
       <p class="footer-copyright mb-0 py-3 text-center">
         &copy; {{new Date().getFullYear()}} Copyright: <a href="https://mdbootstrap.com/docs/vue/?utm_source=DemoApp&utm_medium=MDBVue"> MDBootstrap.com</a>
       </p>
