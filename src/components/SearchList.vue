@@ -10,7 +10,7 @@
           <mdb-card personal class="mb-md-0 mb-4">
             <mdb-view hover>
               <a><mdb-card-image top src="https://assets.honeyplaza.biz/cast/2abe6c36/photo/l_1.jpg" alt="mdbCard image cap"/></a>
-              <a><md-mask overlay="white-slight"/></a>
+              <a><mdb-mask overlay="white-slight"/></a>
             </mdb-view>
             <mdb-card-body>
               <a><mdb-card-title>かんな</mdb-card-title></a>
@@ -25,7 +25,7 @@
           <mdb-card personal class="mb-md-0 mb-4">
             <mdb-view hover>
               <a><mdb-card-image top src="https://assets.honeyplaza.biz/cast/dbd576c7/photo/l_1.jpg" alt="mdbCard image cap"/></a>
-              <a><md-mask overlay="white-slight"/></a>
+              <a><mdb-mask overlay="white-slight"/></a>
             </mdb-view>
             <mdb-card-body>
               <a><mdb-card-title>しおん</mdb-card-title></a>
@@ -39,7 +39,7 @@
           <mdb-card personal class="mb-md-0 mb-4">
             <mdb-view hover>
               <a><mdb-card-image top src="https://assets.honeyplaza.biz/cast/0f3a666f/photo/l_1.jpg" alt="mdbCard image cap"/></a>
-              <a><md-mask overlay="white-slight"/></a>
+              <a><mdb-mask overlay="white-slight"/></a>
             </mdb-view>
             <mdb-card-body>
               <a><mdb-card-title>ゆきほ</mdb-card-title></a>
