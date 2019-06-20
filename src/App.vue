@@ -8,10 +8,12 @@
       </mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav>
-          <mdb-nav-item to="/"><mdb-icon icon="search" size="1x" class="pr-2" /><strong>探す</strong></mdb-nav-item>
+          <mdb-nav-item to="/search"><mdb-icon icon="search" size="1x" class="pr-2" /><strong>探す</strong></mdb-nav-item>
           <mdb-nav-item to="/partner"><mdb-icon icon="thumbs-up" size="1x" class="pr-2" /><strong>お相手から</strong></mdb-nav-item>
           <mdb-nav-item to="/message"><mdb-icon icon="comment-dots" size="1x" class="pr-2" /><strong>メッセージ</strong></mdb-nav-item>
           <mdb-nav-item to="/mypage"><mdb-icon icon="user-alt" size="1x" class="pr-2" /><strong>マイページ</strong></mdb-nav-item>
+          <mdb-nav-item to="/hello"><mdb-icon icon="laugh" size="1x" class="pr-2" /><strong>Hello</strong></mdb-nav-item>
+          <mdb-nav-item to="/demo"><mdb-icon icon="democrat" size="1x" class="pr-2" /><strong>Demo</strong></mdb-nav-item>
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
     </mdb-navbar>
