@@ -1,8 +1,8 @@
 <template>
   <mdb-container>
     <div class="search-list">
-      <mdb-btn gradient="aqua" rounded>本日のPickup</mdb-btn>
-      <mdb-btn gradient="peach" class="float-right" rounded>検索条件</mdb-btn>
+      <mdb-btn gradient="peach" rounded>本日のPickup</mdb-btn>
+      <mdb-btn gradient="aqua" class="float-right" rounded>検索条件</mdb-btn>
     </div>
     <mdb-row>
       <mdb-col md="12">
@@ -80,7 +80,7 @@ export default {
     mdbCardImage,
     mdbMask,
     mdbIcon,
-    mdbView
+    mdbView,
   },
 }
 </script>

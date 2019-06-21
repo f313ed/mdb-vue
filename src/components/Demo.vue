@@ -2,6 +2,50 @@
 
   <mdb-container>
     <mdb-row>
+      <div class="col-12">
+            <h6>基本条件</h6>
+            <div class="list-group-flush">
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>エリア</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="float-right pr-5">東京/神奈川/埼玉/千葉</strong>
+                  </p>
+                </a>
+              </div>
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>年齢</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="float-right pr-5">18歳 〜 33歳</strong>
+                  </p>
+                </a>
+              </div>
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>身長</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="blue-text float-right pr-5">問わない</strong>
+                  </p>
+                </a>
+              </div>
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>体重</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="blue-text float-right pr-5">問わない</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+    </mdb-row>
+
+    <mdb-row>
       <mdb-btn gradient="peach" rounded @click.native="modal = true">検索条件(Modal Demo)</mdb-btn>
       <mdb-btn gradient="purple" rounded>Purple gradient button</mdb-btn>
       <mdb-btn gradient="blue" rounded>Blue gradient button</mdb-btn>
@@ -56,21 +100,61 @@
         </mdb-card-group>
       </mdb-col>
     </mdb-row>
-    <div>
-      <mdb-modal size="fluid" frame position="top" direction="top" :show="modal" @close="modal = false">
-        <mdb-modal-header>
-          <mdb-modal-title>検索条件</mdb-modal-title>
-        </mdb-modal-header>
-        <mdb-modal-body>
-        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-      </mdb-modal-body>
-        <mdb-modal-footer>
-          <mdb-btn color="secondary" @click.native="modal = false">Close</mdb-btn>
-          <mdb-btn color="primary">Save changes</mdb-btn>
-        </mdb-modal-footer>
-      </mdb-modal>
-    </div>
+    <mdb-modal size="fluid" frame position="top" direction="top" :show="modal" @close="modal = false">
+      <mdb-modal-header class="aqua-gradient white-text">
+        <mdb-modal-title>検索条件</mdb-modal-title>
+      </mdb-modal-header>
+      <mdb-modal-body>
+        <mdb-row>
+          <div class="col-12">
+            <h6>基本条件</h6>
+            <div class="list-group-flush">
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>エリア</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="float-right pr-5">東京/神奈川/埼玉/千葉</strong>
+                  </p>
+                </a>
+              </div>
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>年齢</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="float-right pr-5">18歳 〜 33歳</strong>
+                  </p>
+                </a>
+              </div>
 
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>身長</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="blue-text float-right pr-5">問わない</strong>
+                  </p>
+                </a>
+              </div>
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>体重</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="blue-text float-right pr-5">問わない</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </mdb-row>
+      </mdb-modal-body>
+      <mdb-modal-footer>
+        <mdb-btn color="secondary" @click.native="modal = false">Close</mdb-btn>
+        <mdb-btn color="primary">Save changes</mdb-btn>
+      </mdb-modal-footer>
+    </mdb-modal>
 
 
   </mdb-container>
@@ -120,7 +204,7 @@ export default {
     mdbCardImage,
     mdbMask,
     mdbIcon,
-    mdbView
+    mdbView,
   },
   data () {
     return {

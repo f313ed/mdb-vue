@@ -281,5 +281,5 @@ export {
   mdbToastNotification,
   mdbMasonry,
   mdbMasonryItem,
-  
+
 };
