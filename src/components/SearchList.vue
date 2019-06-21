@@ -2,7 +2,7 @@
   <mdb-container>
     <div class="search-list">
       <mdb-btn gradient="peach" rounded>本日のPickup</mdb-btn>
-      <mdb-btn gradient="aqua" class="float-right" rounded>検索条件</mdb-btn>
+      <mdb-btn gradient="aqua" class="float-right" rounded @click.native="modal = true">検索条件</mdb-btn>
     </div>
     <mdb-row>
       <mdb-col md="12">
@@ -53,22 +53,104 @@
         </mdb-card-group>
       </mdb-col>
     </mdb-row>
+    <mdb-modal size="fluid" frame position="top" direction="top" :show="modal" @close="modal = false">
+      <mdb-modal-header class="aqua-gradient white-text">
+        <mdb-modal-title>検索条件</mdb-modal-title>
+      </mdb-modal-header>
+      <mdb-modal-body>
+        <mdb-row>
+          <div class="col-12">
+            <h6>基本条件</h6>
+            <div class="list-group-flush">
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>エリア</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="float-right pr-5">東京/神奈川/埼玉/千葉</strong>
+                  </p>
+                </a>
+              </div>
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>年齢</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="float-right pr-5">18歳 〜 33歳</strong>
+                  </p>
+                </a>
+              </div>
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>身長</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="blue-text float-right pr-5">問わない</strong>
+                  </p>
+                </a>
+              </div>
+              <div class="list-group-item">
+                <a>
+                  <p class="mb-0">
+                    <span>体重</span>
+                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                    <strong class="blue-text float-right pr-5">問わない</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </mdb-row>
+      </mdb-modal-body>
+      <mdb-modal-footer>
+        <mdb-btn color="secondary" @click.native="modal = false">Close</mdb-btn>
+        <mdb-btn color="primary">Save changes</mdb-btn>
+      </mdb-modal-footer>
+    </mdb-modal>
   </mdb-container>
+
+
 
 </template>
 
 <script>
-import { mdbBtn, mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardBody, mdbCardGroup, mdbCardTitle, mdbCardText, mdbCardImage, mdbMask, mdbIcon, mdbView } from 'mdbvue';
-
+import {
+  mdbAccordion,
+  mdbBtn,
+  mdbCard,
+  mdbCardBody,
+  mdbCardGroup,
+  mdbCardImage,
+  mdbCardText,
+  mdbCardTitle,
+  mdbCol,
+  mdbContainer,
+  mdbIcon,
+  mdbMask,
+  mdbModal,
+  mdbModalBody,
+  mdbModalFooter,
+  mdbModalHeader,
+  mdbModalTitle,
+  mdbRow,
+  mdbView,
+} from 'mdbvue';
 export default {
   name: 'SearchList',
   data () {
     return {
-      msg: 'SearchList'
-    };
+      msg: 'SearchList',
+      modal: false,
+};
   },
   components: {
+    mdbAccordion,
     mdbBtn,
+    mdbModal,
+    mdbModalHeader,
+    mdbModalTitle,
+    mdbModalBody,
+    mdbModalFooter,
     mdbContainer,
     mdbRow,
     mdbCol,

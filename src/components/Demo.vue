@@ -3,46 +3,46 @@
   <mdb-container>
     <mdb-row>
       <div class="col-12">
-            <h6>基本条件</h6>
-            <div class="list-group-flush">
-              <div class="list-group-item">
-                <a>
-                  <p class="mb-0">
-                    <span>エリア</span>
-                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
-                    <strong class="float-right pr-5">東京/神奈川/埼玉/千葉</strong>
-                  </p>
-                </a>
-              </div>
-              <div class="list-group-item">
-                <a>
-                  <p class="mb-0">
-                    <span>年齢</span>
-                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
-                    <strong class="float-right pr-5">18歳 〜 33歳</strong>
-                  </p>
-                </a>
-              </div>
-              <div class="list-group-item">
-                <a>
-                  <p class="mb-0">
-                    <span>身長</span>
-                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
-                    <strong class="blue-text float-right pr-5">問わない</strong>
-                  </p>
-                </a>
-              </div>
-              <div class="list-group-item">
-                <a>
-                  <p class="mb-0">
-                    <span>体重</span>
-                    <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
-                    <strong class="blue-text float-right pr-5">問わない</strong>
-                  </p>
-                </a>
-              </div>
-            </div>
+        <h6>基本条件</h6>
+        <div class="list-group-flush">
+          <div class="list-group-item">
+            <a>
+              <p class="mb-0">
+                <span>エリア</span>
+                <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                <strong class="float-right pr-5">東京/神奈川/埼玉/千葉</strong>
+              </p>
+            </a>
           </div>
+          <div class="list-group-item">
+            <a>
+              <p class="mb-0">
+                <span>年齢</span>
+                <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                <strong class="float-right pr-5">18歳 〜 33歳</strong>
+              </p>
+            </a>
+          </div>
+          <div class="list-group-item">
+            <a>
+              <p class="mb-0">
+                <span>身長</span>
+                <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                <strong class="blue-text float-right pr-5">問わない</strong>
+              </p>
+            </a>
+          </div>
+          <div class="list-group-item">
+            <a>
+              <p class="mb-0">
+                <span>体重</span>
+                <span class="float-right"><mdb-icon icon="chevron-right" class="grey-text" /></span>
+                <strong class="blue-text float-right pr-5">問わない</strong>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
     </mdb-row>
 
     <mdb-row>
@@ -127,7 +127,6 @@
                   </p>
                 </a>
               </div>
-
               <div class="list-group-item">
                 <a>
                   <p class="mb-0">
@@ -155,6 +154,18 @@
         <mdb-btn color="primary">Save changes</mdb-btn>
       </mdb-modal-footer>
     </mdb-modal>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   </mdb-container>
@@ -208,7 +219,7 @@ export default {
   },
   data () {
     return {
-      msg: 'ButtonPage',
+      msg: 'Demo',
       modal: false,
     };
   }
